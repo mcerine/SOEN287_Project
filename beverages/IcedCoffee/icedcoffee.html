@@ -39,8 +39,8 @@
 <form>
   <label for="qty">Quantity:</label>
   <select name="ic" id="ic" onchange="calculateAmount(this.value)" required>
-    <option value="" disabled selected>Choose your option</option>
-    <option value="1">1</option>
+    <!-- <option value="" disabled selected>Choose your option</option> -->
+    <option value="1" selected>1</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
@@ -92,10 +92,10 @@
         document.getElementById("ic").value = i;
         calculateAmount(parseInt(checkCookie()));
       }
-      else{
-        document.getElementById("ic").value = "1";
-        calculateAmount(1);
-      }
+      // else{
+      //   document.getElementById("ic").value = "1";
+      //   calculateAmount(1);
+      // }
       console.log(document.getElementById("ic").value);
     }
 
