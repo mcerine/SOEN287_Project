@@ -7,7 +7,7 @@
     <title>Iced Coffee</title>
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
-<body>
+<body onload="fctonload()">
 
   <div class="header">
     <h1>OG Grocery</h1>
@@ -38,8 +38,8 @@
 <p><h4>Enjoy our cold and sweet iced coffee. Our iced coffee is much better than what you will get elsewhere. Don't believe us? Come try it then! </h4> </p>
 <form>
   <label for="qty">Quantity:</label>
-  <select name="ic" id="ic" onchange="calculateAmount(this.value)" onload="calculateAmount(0)">
-    <option value="" disabled selected>Choose your option</option>
+  <select name="ic" id="ic" onchange="calculateAmount(this.value)" required>
+    <option value="0" disabled selected>Choose your option</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -86,17 +86,18 @@
       }
     }
 
-    window.onload = function(){
+    // window.onload = 
+    function fctonload(){
       var i = parseInt(checkCookie());
       if(i != null){
         document.getElementById("ic").value = i;
         calculateAmount(i);
         console.log(getCookie('Pr'));
       }
-      // else{
-      //   document.getElementById("ic").value = "1";
-      //   calculateAmount(1);
-      // }
+      else{
+        document.getElementById("ic").value = "0";
+        calculateAmount(0);
+      }
       console.log(document.getElementById("ic").value);
       console.log(document.getElementById("tot_amount").value);
     }
