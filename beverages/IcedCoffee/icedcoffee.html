@@ -39,7 +39,7 @@
 <form>
   <label for="qty">Quantity:</label>
   <select name="ic" id="ic" onchange="calculateAmount(this.value)" required>
-    <option value="" disabled selected>Choose your option</option>
+    <!-- <option value="" disabled selected>Choose your option</option> -->
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -98,7 +98,7 @@
 
     function checkCookie() {
       let qty = getCookie("qtyP");
-      if (qty != null) {
+      if (qty != "") {
         return qty;
       } else {
         return null;
@@ -125,8 +125,8 @@
         console.log(getCookie('Pr'));
       }
       else{
-        document.getElementById("ic").value = "";
-        document.getElementById("tot_amount").value = 0;
+        document.getElementById("ic").value = 1;
+        calculateAmount(1);
       }
       console.log(document.getElementById("ic").value);
       console.log(document.getElementById("tot_amount").value);
