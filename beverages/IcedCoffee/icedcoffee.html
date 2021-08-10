@@ -47,7 +47,7 @@
     <option value="6">6</option>
   </select>
   <label for="Price">Price:</label>
-  <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:50px; display: none;">
+  <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:50px;">
   <script>
     function calculateAmount(val){
       var tot_price = val * 1.99;
@@ -94,8 +94,7 @@
       }
       else{
         document.getElementById("ic").value = null;
-        var divobj = document.getElementById('tot_amount');
-        divobj.value = "";
+        document.getElementById('tot_amount').value = "";
       }
       console.log(document.getElementById("ic").value);
       console.log(document.getElementById("tot_amount").value);
@@ -103,7 +102,6 @@
 
     window.onbeforeunload= function(){
       setCookie('qtyP', document.getElementById("ic").value);
-      // setCookie2('Pr', document.getElementById("tot_Amount").value);
     }
   </script>
   <br><br>
