@@ -51,9 +51,16 @@
   <script>
     function calculateAmount(val){
       var tot_price = val * 1.99;
-      var divobj = document.getElementById('tot_amount');
-      var pr = tot_price.toFixed(2) + "$";
-      divobj.value = pr;
+      if(tot_price == NaN){
+        var divobj = document.getElementById('tot_amount');
+        divobj.value = "0$";
+      }
+      else{
+        var divobj = document.getElementById('tot_amount');
+        var pr = tot_price.toFixed(2) + "$";
+        divobj.value = pr;
+      }
+      
     }
 
     function setCookie(cname, cvalue){
@@ -78,7 +85,6 @@
 
     function checkCookie() {
       let qty = getCookie('qtyP');
-      console.log(qty)
       if (qty != NaN) {
         return qty;
       } else {
