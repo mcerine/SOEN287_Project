@@ -40,8 +40,7 @@
 <p><h4> Yes, we know that tap water is good. But you know what's better, our bottled water that contains all the necessary minerals for the human body.</h4> </p>
 <form>
   <label for="qty">Quantity:</label>
-  <select name="water" id="water" onchange="calculateAmount(this.value)" required>
-    <option value="" disabled selected>Choose your option</option>
+  <select name="water" id="water" onclick="calculateAmount(this.value)" required>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -50,13 +49,68 @@
     <option value="6">6</option>
   </select>
   <label for="Price">Price:</label>
-  <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:40px;">
+  <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:50px;">
   <script>
     function calculateAmount(val){
       var tot_price = val * 1.29;
-      var divobj = document.getElementById('tot_amount');
-      var pr = tot_price.toFixed(2) + "$";
-      divobj.value = pr;
+      if(Number.isNaN(tot_price)){
+        var divobj = document.getElementById('tot_amount');
+        divobj.value = "0.00$";
+      }
+      else{
+        var divobj = document.getElementById('tot_amount');
+        var pr = tot_price.toFixed(2) + "$";
+        divobj.value = pr;
+      }
+      
+    }
+
+    function setCookie(cname, cvalue){
+      document.cookie = cname + "=" + cvalue + ";";
+    }
+    
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1, c.length);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return null;
+    }
+
+    function checkCookie() {
+      let qty = getCookie('qtyP');
+      if (!Number.isNaN(qty)) {
+        return qty;
+      } else {
+        return null;
+      }
+    }
+
+    window.onload = function(){
+      var i = parseInt(checkCookie());
+      if(i != null){
+        document.getElementById("water").value = i;
+        calculateAmount(i);
+        console.log(getCookie('Pr'));
+      }
+      else{
+        document.getElementById("water").value = null;
+        document.getElementById('tot_amount').value = "";
+      }
+      console.log(document.getElementById("water").value);
+      console.log(document.getElementById("tot_amount").value);
+    }
+
+    window.onbeforeunload= function(){
+      setCookie('qtyP', document.getElementById("water").value);
     }
   </script>
   <br><br>

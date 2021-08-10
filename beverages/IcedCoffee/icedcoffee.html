@@ -50,10 +50,10 @@
   <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:50px;">
   <script>
     function calculateAmount(val){
-      var tot_price = val * 1.99;
+      var tot_price = val * 0.99;
       if(Number.isNaN(tot_price)){
         var divobj = document.getElementById('tot_amount');
-        divobj.value = "0$";
+        divobj.value = "0.00$";
       }
       else{
         var divobj = document.getElementById('tot_amount');
