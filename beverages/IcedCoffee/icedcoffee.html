@@ -90,10 +90,11 @@
       var i = parseInt(checkCookie())
       if(i != null){
         document.getElementById("ic").value = i;
-        // document.getElementById('tot_amount').value = ;
+        document.getElementById('tot_amount').value = calculateAmount(i);
       }
       else{
         document.getElementById("ic").value = "1";
+        document.getElementById('tot_amount').value = calculateAmount(1);
       }
       console.log(document.getElementById("ic").value);
     }
