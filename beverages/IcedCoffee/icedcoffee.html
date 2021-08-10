@@ -60,9 +60,9 @@
     function setCookie(cname, cvalue){
       document.cookie = cname + "=" + cvalue + ";";
     }
-    function setCookie2(cname, cvalue){
-      document.cookie = cname + "=" + cvalue + ";";
-    }
+    // function setCookie2(cname, cvalue){
+    //   document.cookie = cname + "=" + cvalue + ";";
+    // }
     
     function getCookie(cname) {
       let name = cname + "=";
@@ -105,27 +105,28 @@
       }
     }
 
-    function checkCookie2() {
-      let priceQ = getCookie("Pr");
-      if (priceQ != null) {
-        return priceQ;
-      } 
-      // else {
-      //   return null;
-      // }
-    }
+    // function checkCookie2() {
+    //   let priceQ = getCookie("Pr");
+    //   if (priceQ != null) {
+    //     return priceQ;
+    //   } 
+    //   else {
+    //     return null;
+    //   }
+    // }
 
     window.onload = function(){
       var i = parseInt(checkCookie());
-      var j = parseFloat(getCookie('Pr'));
+      // var j = parseFloat(getCookie('Pr'));
       if(i != null){
         document.getElementById("ic").value = i;
-        document.getElementById("tot_amount").value = j;
+        calculateAmount(i);
+        // document.getElementById("tot_amount").value = j;
         console.log(getCookie('Pr'));
       }
       else{
         document.getElementById("ic").value = "";
-        document.getElementById("tot_amount").value = "";
+        document.getElementById("tot_amount").value = 0;
       }
       console.log(document.getElementById("ic").value);
       console.log(document.getElementById("tot_amount").value);
@@ -133,7 +134,7 @@
 
     window.onbeforeunload= function(){
       setCookie('qtyP', document.getElementById("ic").value);
-      setCookie2('Pr', document.getElementById("tot_Amount").value);
+      // setCookie2('Pr', document.getElementById("tot_Amount").value);
     }
   </script>
   <br><br>
