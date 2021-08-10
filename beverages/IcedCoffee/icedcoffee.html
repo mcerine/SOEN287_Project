@@ -51,7 +51,7 @@
   <script>
     function calculateAmount(val){
       var tot_price = val * 1.99;
-      if(tot_price == NaN){
+      if(Number.isNaN(tot_price)){
         var divobj = document.getElementById('tot_amount');
         divobj.value = "0$";
       }
@@ -85,7 +85,7 @@
 
     function checkCookie() {
       let qty = getCookie('qtyP');
-      if (qty != NaN) {
+      if (!Number.isNaN(qty)) {
         return qty;
       } else {
         return null;
