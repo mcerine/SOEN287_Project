@@ -78,11 +78,12 @@
 
     function checkCookie() {
       let qty = getCookie("qtyP");
-      if (qty != "") {
-        return qty;
-      } else {
-        return null;
-      }
+      return qty;
+      // if (qty != "") {
+      //   return qty;
+      // } else {
+      //   return null;
+      // }
     }
 
     window.onload = function(){
