@@ -92,10 +92,11 @@
         calculateAmount(i);
         console.log(getCookie('Pr'));
       }
-      // else{
-      //   document.getElementById("ic").value = "0";
-      //   calculateAmount(0);
-      // }
+      else{
+        document.getElementById("ic").value = null;
+        var divobj = document.getElementById('tot_amount');
+        divobj.value = "";
+      }
       console.log(document.getElementById("ic").value);
       console.log(document.getElementById("tot_amount").value);
     }
