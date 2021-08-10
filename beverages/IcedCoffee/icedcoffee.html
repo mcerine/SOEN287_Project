@@ -56,55 +56,54 @@
       divobj.value = pr;
     }
 
-    // function setCookie(cname, cvalue){
-    //   document.cookie = cname + "=" + cvalue + ";";
-    // }
+    function setCookie(cname, cvalue){
+      document.cookie = cname + "=" + cvalue + ";";
+    }
     
-    // function getCookie(cname) {
-    //   let name = cname + "=";
-    //   let decodedCookie = decodeURIComponent(document.cookie);
-    //   let ca = decodedCookie.split(';');
-    //   for(let i = 0; i < ca.length; i++) {
-    //     let c = ca[i];
-    //     while (c.charAt(0) == ' ') {
-    //       c = c.substring(1, c.length);
-    //     }
-    //     if (c.indexOf(name) == 0) {
-    //       return c.substring(name.length, c.length);
-    //     }
-    //   }
-    //   return null;
-    // }
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1, c.length);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return null;
+    }
 
-    // function checkCookie() {
-    //   let qty = getCookie("qtyP");
-    //   if (qty != "") {
-    //     return qty;
-    //   } else {
-    //     return null;
-    //   }
-    // }
+    function checkCookie() {
+      let qty = getCookie("qtyP");
+      if (qty != "") {
+        return qty;
+      } else {
+        return null;
+      }
+    }
 
-    // // window.onload = 
-    // function fctonload(){
-    //   var i = parseInt(checkCookie());
-    //   if(i != null){
-    //     document.getElementById("ic").value = i;
-    //     calculateAmount(i);
-    //     console.log(getCookie('Pr'));
-    //   }
-    //   else{
-    //     document.getElementById("ic").value = "0";
-    //     calculateAmount(0);
-    //   }
-    //   console.log(document.getElementById("ic").value);
-    //   console.log(document.getElementById("tot_amount").value);
-    // }
+    window.onload = function(){
+      var i = parseInt(checkCookie());
+      if(i != null){
+        document.getElementById("ic").value = i;
+        calculateAmount(i);
+        console.log(getCookie('Pr'));
+      }
+      // else{
+      //   document.getElementById("ic").value = "0";
+      //   calculateAmount(0);
+      // }
+      console.log(document.getElementById("ic").value);
+      console.log(document.getElementById("tot_amount").value);
+    }
 
-    // window.onbeforeunload= function(){
-    //   setCookie('qtyP', document.getElementById("ic").value);
-    //   // setCookie2('Pr', document.getElementById("tot_Amount").value);
-    // }
+    window.onbeforeunload= function(){
+      setCookie('qtyP', document.getElementById("ic").value);
+      // setCookie2('Pr', document.getElementById("tot_Amount").value);
+    }
   </script>
   <br><br>
   <input type="submit" value="Add To Cart">
