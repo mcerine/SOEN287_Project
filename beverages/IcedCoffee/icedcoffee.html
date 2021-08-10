@@ -59,7 +59,6 @@
 
     function setCookie(cname, cvalue){
       document.cookie = cname + "=" + cvalue + ";";
-      console.log("hi2");
     }
     
     function getCookie(cname) {
@@ -80,22 +79,27 @@
     
     function checkCookie() {
       let qty = getCookie("qtyP");
-      console.log("hi");
       if (qty != null) {
         return qty;
       } else {
-        return "";
+        return null;
       }
     }
 
     window.onload = function(){
-      document.getElementById("ic").value = parseInt(checkCookie());
+      var i = parseInt(checkCookie())
+      if(i != null){
+        document.getElementById("ic").value = i;
+        calculateAmount(i)
+      }
+      else{
+        document.getElementById("ic").value = "";
+      }
       console.log(document.getElementById("ic").value);
     }
 
     window.onbeforeunload= function(){
       setCookie('qtyP', document.getElementById("ic").value);
-      console.log("hi4");
     }
   </script>
   <br><br>
