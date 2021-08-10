@@ -78,7 +78,8 @@
 
     function checkCookie() {
       let qty = getCookie('qtyP');
-      if (qty != undefined) {
+      console.log(qty)
+      if (qty != NaN) {
         return qty;
       } else {
         return null;
