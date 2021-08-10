@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;          /* Set font */
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  line-height: 3;
+}
+
+
+a:hover {
+  box-shadow: 0 0 11px grey;
+}
+
+h1 {
+  font-size: 325%;
+}
+
+h2 {
+  font-size: 225%;
+}
+
+h3 {
+  font-size: 175%;
+}
+
+ul {
+  line-height: 4;
+  list-style-type: none;
+  padding: 0;
+}
+
+hr {
+  border: dotted #6E7C7C 8px;
+  border-bottom: none;
+  width: 100%;
+}
+
+/********************* Class Selector ********************/
+.home {
+  height: 15%;
+  position: absolute;
+  bottom: 20%;
+  right: 28%;
+}
+
+.login {
+  height: 15%;
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+}
+
+.cart {
+  height: 15%;
+  position: absolute;
+  bottom: 20%;
+  right: 12%;
+}
+
+.checkout {
+  height: 15%;
+  position: absolute;
+  bottom: 20%;
+  right: 4%;
+}
+
+.aisle-fruits:hover {
+  box-shadow: 0 0 11px green;
+}
+
+.aisle-meats:hover {
+  box-shadow: 0 0 11px red;
+}
+
+.aisle-dairy:hover {
+  box-shadow: 0 0 11px yellow;
+}
+
+.aisle-beverages:hover {
+  box-shadow: 0 0 11px powderblue;
+}
+
+.header {
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  position: relative;
+  height: 150px;
+}
+
+div.box {
+  margin-bottom: 80px;
+}
+
+td.box {
+  background-size: auto;
+  border: 1px solid black;
+}
+
+img.box {
+    max-width: 100%;
+    height: auto;
+    background-size: auto;
+}
+
+
+div.nutrition {
+  margin-bottom: 80px;
+}
+
+.page {
+  min-height: calc(100vh - 320px);
+  margin-bottom: 80px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.navigation {
+  background-color: #D8E3E7;
+  border-radius: 25px;
+  float: left;
+  margin-left: 2%;
+  margin-top: 80px;
+  margin-right: 30px;
+  padding: 2%;
+}
+
+.content {
+  margin-bottom: 80px;
+  padding: 20px;
+  position: absolute;
+  left: 20%;
+  width: 80%;
+}
+
+.footer {
+  /*background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(78,105,95,1) 100%);    */
+  background-color: #071E3D;
+  bottom: 0;
+  color: white;
+  height: 80px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.cart {
+  height: 15%;
+  position: absolute;
+  bottom: 20%;
+  right: 12%;
+}
+
+.checkout {
+  height: 15%;
+  position: absolute;
+  bottom: 20%;
+  right: 4%;
+}
+
+.backstore-link {
+  color: white;
+  position: absolute;
+  right: 2%;
+  bottom: 4%;
+}
+
+.backendbtn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-family:FreeMono, monospace;
+  font-size: 16px;
+  margin-top: 1%;
+  margin-right: 10px;
+  border-radius: 10px;
+  line-height: 3;
+}
+
+.backendbtn:hover {
+  box-shadow: 0 0 11px grey;
+}
+
+.backendtable {
+  width:95%;
+  align-content: center;
+  border: 1px solid black;
+  margin-top: 100px;
+  border-collapse: collapse;
+  text-align: center;
+  margin-right: 100px;
+  margin-bottom: 80px;
+}
+
+.backendform {
+  border-style:solid;
+  width: 250px;
+  border-radius: 20px;
+  background-color: #D8E3E7;;
+  color: black;
+  word-spacing: 5px;
+  padding-inline: 30px;
+  padding-top: 30px;
+  margin-top: 20px;
+  margin-left: 30%;
+  text-align-last: center;
+  margin-bottom: 80px;
+}
+
+.backstore-navigation {
+  text-align: left;
+  padding: 5%;
+}
+
+/********************* ID Selector ********************/
+
+
+/********************* Size Conditions ********************/
+@media (max-width: 934px) {
+    ul {
+      line-height: 1.5;
+    }
+
+    hr {
+      width: 60%;
+    }
+
+    .navigation {
+    margin: 5% 5% auto 5%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    width: 90%;
+    height: 400px;
+  }
+
+
+  .home {
+    right: 40%;
+  }
+
+  .login {
+    right: 28%;
+  }
+
+  .cart {
+    right: 16%;
+  }
+
+  .checkout {
+    right: 4%;
+  }
+}
+
+/********************* Login ********************/
+
+.loginbox, .signupbox{
+  width: 300px; 
+  height: 410px;
+  margin: 0px auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  color: black;
+  border: 3px solid;
+}
+
+button[type=submit]{
+  width: 60%;
+  height: 30px;
+  background: black;;
+  border-radius: 15px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+}
+
+.credentials input[type="text"], input[type="password"], input[type="email"]{
+  margin-top: 10px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid;
+  font-size: 16px;
+
+}
+
+.logintext {
+  margin-top: 20px;
+  font-weight: bold;
+  width: 100%;
+  color:rgb(120, 120, 120);
+}
+
+/********************* Signup ********************/
+
+.signupbox{
+  height: 490px;
+}
+
+/********************* Cart ********************/
+.cart-margin {
+    overflow-x:auto;
+    margin-bottom: 80px;
+}
+
+.shoppingcart, .subtotal{
+  margin: 50px 20%;
+  margin-bottom: 80px;
+}
+
+
+.cart-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th{
+  padding: 5px;
+  margin-left: 20px;
+  text-align: left;
+  color: white;
+  background: #071E3D;
+  height: 40px;
+}
+
+.cart-table td{
+  padding: 10px;
+}
+
+.info{
+  padding: 10px 5px;
+}
+
+
+.productinfo{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productinfo input{
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  margin-left: none;
+  padding-left:none;
+  font-size:12px;
+}
+
+.shoppingcart img{
+  height: 85px;
+  width: 85px;
+}
+
+.subtotal{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subtotal table{
+  width: 100%;
+  max-width: 31%;
+  border-top: 3px solid;
+  border-color: #071E3D;
+  font-weight: bold;
+}
+
+td:last-child{
+  text-align: right;
+}
+
+th:last-child{
+  text-align: right;
+}
+
+.quantity input{
+  background-color: transparent;
+  border: 1px solid;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+
+}
+
+.cart-table th:nth-child(2){
+  padding-left: 45px;
+}
+
+.subtotal button{
+  width: 100%;
+  height: 30px;
+  background: #071E3D;
+  border-radius: 15px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-top: 20px;
+}

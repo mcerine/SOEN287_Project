@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BackStore Edit Order Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    th, td {
+        border: 1px  black;
+        border-collapse: collapse;
+    }
+
+    input:hover {color: rgb(39, 76, 133); background: rgb(200, 229, 240);}
+    input:focus {color: black; background: white;}
+    input[type=text] {
+        box-sizing: border-box;
+        border-style:solid;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>OG Grocery</h1>
+    <a class="home" href="../index.html"><img src="../images/home.png" alt="home-img" title="Main Page"></a>
+    <a class="login" href="../login.html"><img src="../images/account.png" alt="login-img" title="Login"></a>
+    <a class="cart" href="../cart.html"><img src="../images/cart.png" alt="cart-img" title="My Cart"></a>
+     
+  </div>
+
+    <div class="content">
+            <h2 style="margin-left: 33%;">Edit Order</h2>
+
+
+        <p>
+            <form class="backendform" style="height: 320px;">
+                <label for="UFname">Order Number:</label>
+                <input type="text" id="UFname" name="UFname"><br>
+                <br/>
+                <label for="ULname">Order Cost:</label>
+                <input type="text" id="ULname" name="ULname"><br>
+                <br/>
+                <label for="Uemail">Order User:</label>
+                <input type="text" id="Uemail" name="Uemail"><br>
+                <br/>
+                <label for="Upostcod">Order Products:</label>
+                <input type="text" id="Upostcod" name="Upostcod"><br>
+                <br/>
+                <br/>
+                <input type="submit" formaction="BackstoreOrderList.html" value="Save" style="background-color: #D8E3E7; border-radius: 10px;">
+            </form>
+        </p>
+  </div>
+
+  <div class="footer">
+    <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
+    <a class="backstore-link" href="backstore-menu.html">Backstore</a>
+  </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BackStore Edit Product Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    th, td {
+        border: 1px  black;
+        border-collapse: collapse;
+    }
+
+    input:hover {color: rgb(39, 76, 133); background: rgb(200, 229, 240);}
+    input:focus {color: black; background: white;}
+    input[type=text] {
+        box-sizing: border-box;
+        border-style:solid;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>OG Grocery</h1>
+    <a class="home" href="../index.html"><img src="../images/home.png" alt="home-img" title="Main Page"></a>
+    <a class="login" href="../login.html"><img src="../images/account.png" alt="login-img" title="Login"></a>
+    <a class="cart" href="../cart.html"><img src="../images/cart.png" alt="cart-img" title="My Cart"></a>
+     
+  </div>
+
+    <div class="content">
+            <h2 style="margin-left: 31%;">Edit Product</h2>
+
+
+        <p>
+            <form class="backendform"; style="height: 320px;">
+                <label for="Pname">Product name:</label>
+                <input type="text" id="Pname" name="Pname"><br>
+                <br/>
+                <label for="Pqty">Product quantity:</label>
+                <input type="text" id="Pqty" name="Pqty"><br>
+                <br/>
+                <label for="PAisle">Product Aisle:</label>
+                <input type="text" id="PAisle" name="PAisle"><br>
+                <br/>
+                <label for="PDescr">Product description:</label>
+                <input type="text" id="PDescr" name="PDescr"><br>
+                <br/>
+                <br/>
+                <input type="submit" formaction="BackstoreProductList.html" value="Save" style="background-color: #D8E3E7; border-radius: 10px;">
+            </form>
+        </p>
+
+
+  </div>
+
+  <div class="footer">
+    <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
+    <a class="backstore-link" href="backstore-menu.html">Backstore</a>
+  </div>
+
+  </body>
+
+</html>

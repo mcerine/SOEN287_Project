@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "Author" content = "">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lettuce</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>OG Grocery</h1>
+    <a class="home" href="../../index.html"><img src="../../images/home.png" alt="home-img" title="Main Page"></a>
+    <a class="login" href="../../login.html"><img src="../../images/account.png" alt="login-img" title="Login"></a>
+    <a class="cart" href="../../cart.html"><img src="../../images/cart.png" alt="cart-img" title="My Cart"></a>
+     
+  </div>
+
+
+ <div class="page">
+    <div class="navigation">
+      <h4>Aisles</h4>
+      <hr />
+      <ul>
+        <li><a class="aisle-dairy" href="../../dairy-eggs/page.html">Dairy & Eggs</a></li>
+        <hr />
+        <li><a class="aisle-fruits" href="../../fruits-vegs/page.html">Fruits & Vegetables</a></li>
+        <hr />
+        <li><a class="aisle-meats" href="../../meats/page.html">Meats</a></li>
+        <hr/>
+        <li><a class="aisle-beverages" href="../../beverages/page.html">Beverages</a></li>
+      </ul>
+	  </div>
+
+<div align="center">
+<br><br>
+<img src="lettuce.jpg" alt="lettuce">
+<p><h4>You don't have to worry about E.coli when buying our lettuce. Our lettuce batches are thoroughly inspected by our in-house team of scientists to make sure they are healthy and disease-free.</h4> </p>
+<form>
+  <label for="qty">Quantity:</label>
+  <select name="lettuce" id="lettuce" onchange="calculateAmount(this.value)" required>
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+  <label for="Price">Price:</label>
+  <input type="quantity" name="tot_amount" id="tot_amount" type="text" readonly style="border: none; width:40px;">
+  <script>
+    function calculateAmount(val){
+      var tot_price = val * 1.29;
+      var divobj = document.getElementById('tot_amount');
+      var pr = tot_price.toFixed(2) + "$";
+      divobj.value = pr;
+    }
+  </script>
+  <br><br>
+  <input type="submit" value="Add To Cart">
+</form>
+<p><b>**We limit every item to a quantity 6 to ensure availability to all customers.**</b></p>
+</div>
+
+<div align="center">
+  <button class="button" id="details" onclick="ShowHide()" style="background-color: black; border: none; color: white; text-align:center; text-decoration: none; font-family:FreeMono, monospace; font-size: 16px; border-radius: 10px; line-height: 2; ">More Description</button>
+  <script>
+    function ShowHide(){
+      var x = document.getElementById('nutritionVal');
+      if(x.style.display == 'none'){
+        x.style.display = 'block';
+      }
+      else{
+        x.style.display = 'none';
+      }
+    }
+  </script>  
+  </div>
+  
+<div align="center" class="nutrition" id="nutritionVal" style="display: none;"><table border="border">
+<table border="border">
+<caption><b>Nutritional Value</b></caption>
+    <tr>
+        <th>Energy</th>
+        <th>% Daily Value</th>
+    </tr>
+    <tr>
+        <td>Fat</td>
+        <td>0</td>
+    </tr>
+	    <tr>
+        <td>Cholesterol</td>
+        <td>0</td>
+    </tr>
+	    <tr>
+        <td>Sodium</td>
+        <td>1</td>
+    </tr>
+	    <tr>
+        <td>Carbohydrates</td>
+        <td>2</td>
+    </tr>
+	    <tr>
+        <td>Protein</td>
+        <td>2</td>
+    </tr>
+	    <tr>
+        <td>Vitamin A</td>
+        <td>2</td>
+    </tr>
+	    <tr>
+        <td>Vitamin C</td>
+        <td>2</td>
+    </tr>
+</table>
+</div></div>
+
+<div class="footer">
+  <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
+  <a class="backstore-link" href="../../backstore/backstore-menu.html">Backstore</a>
+</div>
+
+</body>
+</html>

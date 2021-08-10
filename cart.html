@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Main Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>OG Grocery</h1>
+    <a class="home" href="index.html"><img src="images/home.png" alt="home-img" title="Main Page"></a>
+    <a class="login" href="login.html"><img src="images/account.png" alt="login-img" title="Login"></a>
+    <a class="cart" href="cart.html"><img src="images/cart.png" alt="cart-img" title="My Cart"></a>
+    
+  </div>
+
+<div class="cart-margin">
+    <div class="shoppingcart" style="overflow-x:auto;">
+        <table class="cart-table">
+            <tr>
+                <th class="thcart">Product</th>
+                <th class="thcart">Quantity</th>
+                <th class="thcart">Price</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="productinfo">
+                        <img src="meats/Chicken/chicken.jpg" alt="chicken">
+                        <div class="info">
+                            Chicken
+                            <br>1.99$/lb <br>
+                            <input type="button" value="Delete">
+                        </div>
+                    </div>
+                </td>
+                <td class=tdquantity>
+                    <table class="quantity">
+                        <td>
+                            <input class="subtract" type="button" value="-">
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            <input type="button" value="+">
+                        </td>
+
+                    </table>
+
+                </td>
+                <td>1.99$</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="productinfo">
+                        <img src="meats/Beef/beef.jpg" alt="beef">
+                        <div class="info">
+                            Beef
+                            <br>2.99$/lb <br>
+                            <input type="button" value="Delete">
+                        </div>
+                    </div>
+                </td>
+                <td class=tdquantity>
+                    <table class="quantity">
+                        <td>
+                            <input class="subtract" type="button" value="-">
+                        </td>
+                        <td>1</td>
+                        <td>
+                            <input type="button" value="+">
+                        </td>
+
+                    </table>
+                </td>
+                <td>2.99$</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="productinfo">
+                        <img src="beverages/IcedCoffee/icedcoffee.jpg" alt="icedcoffee">
+                        <div class="info">
+                            Iced Coffee
+                            <br>2.99$/each <br>
+                            <input type="button" value="Delete">
+                        </div>
+                    </div>
+                </td>
+                <td class=tdquantity>
+                    <table class="quantity">
+                        <td>
+                            <input class="subtract" type="button" value="-">
+                        </td>
+                        <td>1</td>
+                        <td>
+                            <input type="button" value="+">
+                        </td>
+
+                    </table>
+                </td>
+                <td>2.99$</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="productinfo">
+                        <img src="dairy-eggs/Milk/milk.jpg" alt="milk">
+                        <div class="info">
+                            Milk
+                            <br>
+                             1.29$/each
+                            <br>
+                            <input type="button" value="Delete">
+                        </div>
+                    </div>
+                </td>
+                <td class=tdquantity>
+                    <table class="quantity">
+                        <td>
+                            <input class="subtract" type="button" value="-">
+                        </td>
+                        <td>1</td>
+                        <td>
+                            <input type="button" value="+">
+                        </td>
+
+                    </table>
+                </td>
+                <td>1.29$</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="subtotal">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>9.26$</td>
+            </tr>
+            <tr>
+                <td>GST</td>
+                <td>0.46$</td>
+            </tr>
+            <tr>
+                <td>QST</td>
+                <td>0.92$</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>10.64$</td>
+            </tr>
+            <tr>
+                <td>
+                    <button class ="cartbtn" type="submit">Continue Shopping</button>
+                </td>
+                <td>
+                    <button class ="cartbtn" type="submit">Proceed to Checkout</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+    <div class="footer">
+        <p>© 2021 Kevin Estrada, Tamzid Hossain, Cerine Madi, Bruce Say.</p>
+        <a class="backstore-link" href="backstore/backstore-menu.html">Backstore</a>
+      </div>
+  </body>
+</html>
