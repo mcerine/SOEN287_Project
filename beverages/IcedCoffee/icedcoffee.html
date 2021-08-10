@@ -40,7 +40,7 @@
   <label for="qty">Quantity:</label>
   <select name="ic" id="ic" onchange="calculateAmount(this.value)" required>
     <option value="" disabled selected>Choose your option</option>
-    <option value="1" selected>1</option>
+    <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
@@ -117,10 +117,11 @@
 
     window.onload = function(){
       var i = parseInt(checkCookie());
-      var j = parseFloat(checkCookie2());
+      var j = parseFloat(getCookie('Pr'));
       if(i != null){
         document.getElementById("ic").value = i;
         document.getElementById("tot_amount").value = j;
+        console.log(getCookie('Pr'));
       }
       else{
         document.getElementById("ic").value = "";
