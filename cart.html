@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="scripts.js" async></script>
+  <script>
+
+  </script>
 </head>
 
 <body>
@@ -31,8 +35,8 @@
                         <img src="meats/Chicken/chicken.jpg" alt="chicken">
                         <div class="info">
                             Chicken
-                            <br>1.99$/lb <br>
-                            <input type="button" value="Delete">
+                            <div class="costperitem">1.99$/lb </div>
+                            <input class="delete" type="button" value="Delete">
                         </div>
                     </div>
                 </td>
@@ -41,17 +45,17 @@
                         <td>
                             <input class="subtract" type="button" value="-">
                         </td>
-                        <td>
-                            1
+                        <td class="itemquantity">
+							3
                         </td>
                         <td>
-                            <input type="button" value="+">
+                            <input class="add" type="button" value="+">
                         </td>
 
                     </table>
 
                 </td>
-                <td>1.99$</td>
+                <td class="price">1.99$</td>
             </tr>
             <tr>
                 <td>
@@ -59,8 +63,8 @@
                         <img src="meats/Beef/beef.jpg" alt="beef">
                         <div class="info">
                             Beef
-                            <br>2.99$/lb <br>
-                            <input type="button" value="Delete">
+                            <div class="costperitem">2.99$/lb </div>
+                            <input class="delete" type="button" value="Delete">
                         </div>
                     </div>
                 </td>
@@ -69,14 +73,14 @@
                         <td>
                             <input class="subtract" type="button" value="-">
                         </td>
-                        <td>1</td>
+                        <td class="itemquantity">2</td>
                         <td>
-                            <input type="button" value="+">
+                            <input class="add" type="button" value="+">
                         </td>
 
                     </table>
                 </td>
-                <td>2.99$</td>
+                <td class="price">2.99$</td>
             </tr>
             <tr>
                 <td>
@@ -84,8 +88,8 @@
                         <img src="beverages/IcedCoffee/icedcoffee.jpg" alt="icedcoffee">
                         <div class="info">
                             Iced Coffee
-                            <br>2.99$/each <br>
-                            <input type="button" value="Delete">
+                            <div class="costperitem">2.99$/each </div>
+                            <input class="delete" type="button" value="Delete">
                         </div>
                     </div>
                 </td>
@@ -94,14 +98,14 @@
                         <td>
                             <input class="subtract" type="button" value="-">
                         </td>
-                        <td>1</td>
+                        <td class="itemquantity">1</td>
                         <td>
-                            <input type="button" value="+">
+                            <input class="add" type="button" value="+">
                         </td>
 
                     </table>
                 </td>
-                <td>2.99$</td>
+                <td class="price">2.99$</td>
             </tr>
             <tr>
                 <td>
@@ -109,10 +113,10 @@
                         <img src="dairy-eggs/Milk/milk.jpg" alt="milk">
                         <div class="info">
                             Milk
-                            <br>
+                            <div class="costperitem">
                              1.29$/each
-                            <br>
-                            <input type="button" value="Delete">
+                            </div>
+                            <input class="delete" type="button" value="Delete">
                         </div>
                     </div>
                 </td>
@@ -121,14 +125,14 @@
                         <td>
                             <input class="subtract" type="button" value="-">
                         </td>
-                        <td>1</td>
+                        <td class="itemquantity">1</td>
                         <td>
-                            <input type="button" value="+">
+                            <input class="add" type="button" value="+">
                         </td>
 
                     </table>
                 </td>
-                <td>1.29$</td>
+                <td class="price">1.29$</td>
             </tr>
         </table>
     </div>
@@ -137,23 +141,23 @@
         <table>
             <tr>
                 <td>Subtotal</td>
-                <td>9.26$</td>
+                <td class="cartsubtotal">9.26$</td>
             </tr>
             <tr>
                 <td>GST</td>
-                <td>0.46$</td>
+                <td class="cartgst">0.46$</td>
             </tr>
             <tr>
                 <td>QST</td>
-                <td>0.92$</td>
+                <td class="cartqst">0.92$</td>
             </tr>
             <tr>
                 <td>Total</td>
-                <td>10.64$</td>
+                <td class="carttotal">10.64$</td>
             </tr>
             <tr>
                 <td>
-                    <button class ="cartbtn" type="submit">Continue Shopping</button>
+                    <button class ="continueShopping" type="button">Continue Shopping</button>
                 </td>
                 <td>
                     <button class ="cartbtn" type="submit">Proceed to Checkout</button>
