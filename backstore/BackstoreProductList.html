@@ -55,9 +55,9 @@
                             x[i].getElementsByTagName("Product")[0].childNodes[0].nodeValue +
                             "</td><td>" +
                             x[i].getElementsByTagName("Quantity")[0].childNodes[0].nodeValue +
-                            "</td></tr>" +
+                            "</td><td>" +
                             x[i].getElementsByTagName("Price")[0].childNodes[0].nodeValue +
-                            "</td></tr>" +
+                            "</td><td>" +
                             x[i].getElementsByTagName("Aisle")[0].childNodes[0].nodeValue +
                             "</td><td>" +
                             x[i].getElementsByTagName("LimitedQuantity")[0].childNodes[0].nodeValue +
@@ -77,7 +77,7 @@
                             x[i].getElementsByTagName("VitaminA")[0].childNodes[0].nodeValue +
                             "</td><td>" +
                             x[i].getElementsByTagName("VitaminB")[0].childNodes[0].nodeValue +
-                            "</td></tr><td><a class=\"backendbtn\" href=\"BackstoreEditProduct.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td>";
+                            "</td><td><a class=\"backendbtn\" href=\"BackstoreEditProduct.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td></tr>";
                         }
                         document.getElementById("productsTable").innerHTML = table;
                         }
