@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<Product>Tea</Product>
+		<Quantity>60</Quantity>
+		<Price>1.29$</Price>
+		<Aisle>Beverages</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our tea come from non-GMO leaves and sustainable farming. By drinking our tea, you will not only savour the taste but make sure that workers were paid fairly</Description>
+		<Fat>0</Fat>
+		<Cholesterol>0</Cholesterol>
+		<Sodium>0</Sodium>
+		<Carbohydrates>5</Carbohydrates>
+		<Protein>1</Protein>
+		<VitaminA>5</VitaminA>
+		<VitaminB>5</VitaminB>
+	</record>
+	<record>
+		<Product>Iced Coffee</Product>
+		<Quantity>60</Quantity>
+		<Price>0.99$</Price>
+		<Aisle>Beverages</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Enjoy our cold and sweet iced coffee. Our iced coffee is much better than what you will get elsewhere. Don't believe us? Come try it then!</Description>
+		<Fat>0</Fat>
+		<Cholesterol>0</Cholesterol>
+		<Sodium>2</Sodium>
+		<Carbohydrates>16</Carbohydrates>
+		<Protein>0</Protein>
+		<VitaminA>8</VitaminA>
+		<VitaminB>10</VitaminB>
+	</record>
+	<record>
+		<Product>Juice</Product>
+		<Quantity>60</Quantity>
+		<Price>1.99$</Price>
+		<Aisle>Beverages</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>With each sip, your taste buds will thank you. Fear not, the freshness is guaranteed as we blender the different fruits right on front of you.</Description>
+		<Fat>8</Fat>
+		<Cholesterol>1</Cholesterol>
+		<Sodium>8</Sodium>
+		<Carbohydrates>25</Carbohydrates>
+		<Protein>5</Protein>
+		<VitaminA>100</VitaminA>
+		<VitaminB>100</VitaminB>
+	</record>
+	<record>
+		<Product>Water</Product>
+		<Quantity>60</Quantity>
+		<Price>1.29$</Price>
+		<Aisle>Beverages</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Yes, we know that tap water is good. But you know what's better, our bottled water that contains all the necessary minerals for the human body.</Description>
+		<Fat>0</Fat>
+		<Cholesterol>0</Cholesterol>
+		<Sodium>1</Sodium>
+		<Carbohydrates>0</Carbohydrates>
+		<Protein>0</Protein>
+		<VitaminA>0</VitaminA>
+		<VitaminB>0</VitaminB>
+	</record>
+	<record>
+		<Product>Beef</Product>
+		<Quantity>60</Quantity>
+		<Price>2.99$</Price>
+		<Aisle>Meats</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our beef come from the Angus Scottish breed. The quality is much higher and it ranks right next to the Wagyu beef.</Description>
+		<Fat>34</Fat>
+		<Cholesterol>43</Cholesterol>
+		<Sodium>14</Sodium>
+		<Carbohydrates>10</Carbohydrates>
+		<Protein>19</Protein>
+		<VitaminA>1</VitaminA>
+		<VitaminB>1</VitaminB>
+	</record>
+	<record>
+		<Product>Chicken</Product>
+		<Quantity>60</Quantity>
+		<Price>1.99$</Price>
+		<Aisle>Meats</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our whole chicken lets you do what you think is best. Be it for BBQ, burgers or whole chicken roast, you can rest assured our chicken is the best.</Description>
+		<Fat>10</Fat>
+		<Cholesterol>8</Cholesterol>
+		<Sodium>9</Sodium>
+		<Carbohydrates>12</Carbohydrates>
+		<Protein>15</Protein>
+		<VitaminA>0</VitaminA>
+		<VitaminB>0</VitaminB>
+	</record>
+	<record>
+		<Product>Pork</Product>
+		<Quantity>60</Quantity>
+		<Price>2.39$</Price>
+		<Aisle>Meats</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our pork meat is locally farmed in the rural Quebec. They are corn and grass fed and are allowed to roam freely.</Description>
+		<Fat>32</Fat>
+		<Cholesterol>22</Cholesterol>
+		<Sodium>17</Sodium>
+		<Carbohydrates>8</Carbohydrates>
+		<Protein>15</Protein>
+		<VitaminA>1</VitaminA>
+		<VitaminB>0</VitaminB>
+	</record>
+	<record>
+		<Product>Salmon</Product>
+		<Quantity>60</Quantity>
+		<Price>4.99$</Price>
+		<Aisle>Meats</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our salmon fish are wild caught from the Atlantic Ocean, not farmed. As a result, you can expect the best taste and the best bang for your buck.</Description>
+		<Fat>10</Fat>
+		<Cholesterol>8</Cholesterol>
+		<Sodium>10</Sodium>
+		<Carbohydrates>6</Carbohydrates>
+		<Protein>10</Protein>
+		<VitaminA>9</VitaminA>
+		<VitaminB>7</VitaminB>
+	</record>
+	<record>
+		<Product>Apple</Product>
+		<Quantity>60</Quantity>
+		<Price>2.99$</Price>
+		<Aisle>Fruits &amp; Vegetables</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Do you want to become the next Isaac Newton? If so, buy our apples! One apple falling on your head will give you the same intelligence as Newton. And as the doctors say, "An apple a day keeps the doctor away".</Description>
+		<Fat>0</Fat>
+		<Cholesterol>0</Cholesterol>
+		<Sodium>5</Sodium>
+		<Carbohydrates>10</Carbohydrates>
+		<Protein>1</Protein>
+		<VitaminA>100</VitaminA>
+		<VitaminB>10</VitaminB>
+	</record>
+	<record>
+		<Product>Banana</Product>
+		<Quantity>60</Quantity>
+		<Price>1.29$</Price>
+		<Aisle>Fruits &amp; Vegetables</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our fresh bananas are directly from the mightly lands of Costa Rica and Guatemala. Each bite will make you regret not buying more!</Description>
+		<Fat>0</Fat>
+		<Cholesterol>1</Cholesterol>
+		<Sodium>1</Sodium>
+		<Carbohydrates>17</Carbohydrates>
+		<Protein>1</Protein>
+		<VitaminA>10</VitaminA>
+		<VitaminB>25</VitaminB>
+	</record>
+	<record>
+		<Product>Orange</Product>
+		<Quantity>60</Quantity>
+		<Price>1.99$</Price>
+		<Aisle>Fruits &amp; Vegetables</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Freshly cultivated in the fertile land of China, you can rest assured that only the best orange are chosen for export.</Description>
+		<Fat>0</Fat>
+		<Cholesterol>0</Cholesterol>
+		<Sodium>5</Sodium>
+		<Carbohydrates>15</Carbohydrates>
+		<Protein>0</Protein>
+		<VitaminA>15</VitaminA>
+		<VitaminB>100</VitaminB>
+	</record>
+	<record>
+		<Product>Lettuce</Product>
+		<Quantity>60</Quantity>
+		<Price>1.29$</Price>
+		<Aisle>Fruits &amp; Vegetables</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>You don't have to worry about E.coli when buying our lettuce. Our lettuce batches are thoroughly inspected by our in-house team of scientists to make sure they are healthy and disease-free.</Description>
+		<Fat>0</Fat>
+		<Cholesterol>0</Cholesterol>
+		<Sodium>1</Sodium>
+		<Carbohydrates>2</Carbohydrates>
+		<Protein>2</Protein>
+		<VitaminA>2</VitaminA>
+		<VitaminB>2</VitaminB>
+	</record>
+	<record>
+		<Product>Butter</Product>
+		<Quantity>60</Quantity>
+		<Price>2.99$</Price>
+		<Aisle>Dairy &amp; Eggs</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our butter is made by our in-house team of experts directly from Italy. They are masters in their trade and have been doing that for over 30 years!</Description>
+		<Fat>18</Fat>
+		<Cholesterol>23</Cholesterol>
+		<Sodium>21</Sodium>
+		<Carbohydrates>8</Carbohydrates>
+		<Protein>8</Protein>
+		<VitaminA>1</VitaminA>
+		<VitaminB>0</VitaminB>
+	</record>
+	<record>
+		<Product>Cheese</Product>
+		<Quantity>60</Quantity>
+		<Price>3.99$</Price>
+		<Aisle>Dairy &amp; Eggs</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our cheese is made in-house with our expert team that comes directly from Italy. It is fermented with the same milk sold in our store, that's how you know we only offer the best for our customers.</Description>
+		<Fat>10</Fat>
+		<Cholesterol>6</Cholesterol>
+		<Sodium>2</Sodium>
+		<Carbohydrates>8</Carbohydrates>
+		<Protein>14</Protein>
+		<VitaminA>0</VitaminA>
+		<VitaminB>0</VitaminB>
+	</record>
+	<record>
+		<Product>Eggs</Product>
+		<Quantity>60</Quantity>
+		<Price>6.99$</Price>
+		<Aisle>Dairy &amp; Eggs</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Our eggs are hatched from free roam chicken. This means, all natural. No growth hormones or chemicals!</Description>
+		<Fat>6</Fat>
+		<Cholesterol>5</Cholesterol>
+		<Sodium>7</Sodium>
+		<Carbohydrates>7</Carbohydrates>
+		<Protein>5</Protein>
+		<VitaminA>0</VitaminA>
+		<VitaminB>0</VitaminB>
+	</record>
+	<record>
+		<Product>Milk</Product>
+		<Quantity>60</Quantity>
+		<Price>3.99$</Price>
+		<Aisle>Dairy &amp; Eggs</Aisle>
+		<LimitedQuantity>6</LimitedQuantity>
+		<Description>Do you rather have your milk in carton box or plastic bag? No need to fight, we offer both and with different % of fat too!</Description>
+		<Fat>10</Fat>
+		<Cholesterol>3</Cholesterol>
+		<Sodium>1</Sodium>
+		<Carbohydrates>5</Carbohydrates>
+		<Protein>10</Protein>
+		<VitaminA>4</VitaminA>
+		<VitaminB>6</VitaminB>
+	</record>
+</data-set>

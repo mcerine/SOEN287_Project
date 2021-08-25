@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<record>
+		<FirstName>Kevin</FirstName>
+		<LastName>Estrada</LastName>
+		<Email>kevinestrada@gmail.com</Email>
+		<PostalCode>A1B 2C3</PostalCode>
+		<Password>123456</Password>
+	</record>
+	<record>
+		<FirstName>Tamzid</FirstName>
+		<LastName>Hossain</LastName>
+		<Email>tamzidhossain@gmail.com</Email>
+		<PostalCode>A1B 2C3</PostalCode>
+		<Password>123456</Password>
+	</record>
+	<record>
+		<FirstName>Cerine</FirstName>
+		<LastName>Madi</LastName>
+		<Email>cerinemadi@gmail.com</Email>
+		<PostalCode>A1B 2C3</PostalCode>
+		<Password>123456</Password>
+	</record>
+	<record>
+		<FirstName>Bruce</FirstName>
+		<LastName>Say</LastName>
+		<Email>brucesay@gmail.com</Email>
+		<PostalCode>A1B 2C3</PostalCode>
+		<Password>123456</Password>
+	</record>
+</data-set>
