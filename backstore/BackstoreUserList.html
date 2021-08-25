@@ -26,14 +26,15 @@
 
     <div class="content">
 
-           <h2>All Users</h2>
+           <!-- <h2>All Users</h2> -->
+           <button type="button" class="backendbtn" onclick="loadXMLDoc()">All Users</button>
 
             <a class="backendbtn" href="BackstoreEditUser.html" style="position: absolute; right: 7%;">Add User</a>
 
         <p>
             <div class="backstore-menu" style="overflow-x:auto;">
               
-        <table class="backendtable" align="center" id="usersTable" onload="loadXMLDoc()"></table>
+        <table class="backendtable" align="center" id="usersTable"></table>
             <script>
                 function loadXMLDoc() {
                     var xmlhttp = new XMLHttpRequest();
