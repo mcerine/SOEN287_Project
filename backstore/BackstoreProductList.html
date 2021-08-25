@@ -14,7 +14,7 @@
   </style>
 </head>
 
-<body>
+<body onload="loadXMLDoc()">
 
   <div class="header">
     <h1>OG Grocery</h1>
@@ -31,7 +31,7 @@
         <p>
             <div class="backstore-menu" style="overflow-x:auto;">
                 
-            <table class="backendtable" align="center" id="productsTable" onload="loadXMLDoc()"></table>
+            <table class="backendtable" align="center" id="productsTable"></table>
             <script>
                     function loadXMLDoc() {
                         var xmlhttp = new XMLHttpRequest();

@@ -14,7 +14,7 @@
   </style>
 </head>
 
-<body>
+<body onload="loadXMLDoc()">
 
   <div class="header">
     <h1>OG Grocery</h1>
@@ -31,7 +31,7 @@
         <p>
             <div class="backstore-menu" style="overflow-x:auto;">
                 
-            <table class="backendtable" align="center" id="orderTable" onload="loadXMLDoc()"></table>
+            <table class="backendtable" align="center" id="orderTable"></table>
             <script>
                     function loadXMLDoc() {
                         var xmlhttp = new XMLHttpRequest();
@@ -55,11 +55,11 @@
                             x[i].getElementsByTagName("Number")[0].childNodes[0].nodeValue +
                             "</td><td>" +
                             x[i].getElementsByTagName("Cost")[0].childNodes[0].nodeValue +
-                            "</td></tr>" +
+                            "</td><td>" +
                             x[i].getElementsByTagName("User")[0].childNodes[0].nodeValue +
-                            "</td></tr>" +
+                            "</td><td>" +
                             x[i].getElementsByTagName("Products")[0].childNodes[0].nodeValue +
-                            "</td></tr><td><a class=\"backendbtn\" href=\"BackstoreEditOrder.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td>";
+                            "</td><td><a class=\"backendbtn\" href=\"BackstoreEditOrder.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td></tr>";
                         }
                         document.getElementById("orderTable").innerHTML = table;
                         }
