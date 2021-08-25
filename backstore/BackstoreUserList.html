@@ -58,13 +58,13 @@
                         x[i].getElementsByTagName("FirstName")[0].childNodes[0].nodeValue +
                         "</td><td>" +
                         x[i].getElementsByTagName("LastName")[0].childNodes[0].nodeValue +
-                        "</td></tr>" +
+                        "</td></td>" +
                         x[i].getElementsByTagName("Email")[0].childNodes[0].nodeValue +
-                        "</td></tr>" +
+                        "</td></td>" +
                         x[i].getElementsByTagName("PostalCode")[0].childNodes[0].nodeValue +
-                        "</td></tr>" +
+                        "</td></td>" +
                         x[i].getElementsByTagName("Password")[0].childNodes[0].nodeValue +
-                        "</td></tr><td><a class=\"backendbtn\" href=\"BackstoreEditUser.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td>";
+                        "</td><td><a class=\"backendbtn\" href=\"BackstoreEditUser.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td></tr>";
                     }
                     document.getElementById("usersTable").innerHTML = table;
                     }
