@@ -30,298 +30,57 @@
             <a class="backendbtn" href="BackstoreEditProduct.html" style="position: absolute; right: 7%;">Add Product</a>
         <p>
             <div class="backstore-menu" style="overflow-x:auto;">
-            <table class="backendtable" align="center">
-                <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Aisle</th>
-                    <th>Limited Quantity</th>
-                    <th>Description</th>
-                    <th>Fat</th>
-                    <th>Cholesterol</th>
-                    <th>Sodium</th>
-                    <th>Carbohydrates</th>
-                    <th>Protein</th>
-                    <th>Vitamin A</th>
-                    <th>Vitamin C</th>
-                    <th colspan="2">Options</th>
-                </tr>
+                <script>
+                    function loadXMLDoc() {
+                        var xmlhttp = new XMLHttpRequest();
+                        xmlhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            myFunction(this);
+                            }
+                        };
 
-                <tr>
-                    <td>Tea</td>
-                    <td>60</td>
-                    <td>1.29$</td>
-                    <td>Beverages</td>
-                    <td>6</td>
-                    <td>Our tea come from non-GMO leaves and sustainable farming. By drinking our tea, you will not only savour the taste but make sure that workers were paid fairly</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>5</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Iced Coffee</td>
-                    <td>60</td>
-                    <td>0.99$</td>
-                    <td>Beverages</td>
-                    <td>6</td>
-                    <td>Enjoy our cold and sweet iced coffee. Our iced coffee is much better than what you will get elsewhere. Don't believe us? Come try it then!</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>2</td>
-                    <td>16</td>
-                    <td>0</td>
-                    <td>8</td>
-                    <td>10</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Juice</td>
-                    <td>60</td>
-                    <td>1.99$</td>
-                    <td>Beverages</td>
-                    <td>6</td>
-                    <td>With each sip, your taste buds will thank you. Fear not, the freshness is guaranteed as we blender the different fruits right on front of you.</td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>8</td>
-                    <td>25</td>
-                    <td>5</td>
-                    <td>100</td>
-                    <td>100</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Water</td>
-                    <td>60</td>
-                    <td>1.29$</td>
-                    <td>Beverages</td>
-                    <td>6</td>
-                    <td>Yes, we know that tap water is good. But you know what's better, our bottled water that contains all the necessary minerals for the human body.</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Beef</td>
-                    <td>60</td>
-                    <td>2.99$</td>
-                    <td>Meats</td>
-                    <td>6</td>
-                    <td>Our beef come from the Angus Scottish breed. The quality is much higher and it ranks right next to the Wagyu beef.</td>
-                    <td>34</td>
-                    <td>43</td>
-                    <td>14</td>
-                    <td>10</td>
-                    <td>19</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Chicken</td>
-                    <td>60</td>
-                    <td>1.99$</td>
-                    <td>Meats</td>
-                    <td>6</td>
-                    <td>Our whole chicken lets you do what you think is best. Be it for BBQ, burgers or whole chicken roast, you can rest assured our chicken is the best.</td>
-                    <td>10</td>
-                    <td>8</td>
-                    <td>9</td>
-                    <td>12</td>
-                    <td>15</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Pork</td>
-                    <td>60</td>
-                    <td>2.39$</td>
-                    <td>Meats</td>
-                    <td>6</td>
-                    <td>Our pork meat is locally farmed in the rural Quebec. They are corn and grass fed and are allowed to roam freely.</td>
-                    <td>32</td>
-                    <td>22</td>
-                    <td>17</td>
-                    <td>8</td>
-                    <td>15</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Salmon</td>
-                    <td>60</td>
-                    <td>4.99$</td>
-                    <td>Meats</td>
-                    <td>6</td>
-                    <td>Our salmon fish are wild caught from the Atlantic Ocean, not farmed. As a result, you can expect the best taste and the best bang for your buck.</td>
-                    <td>10</td>
-                    <td>8</td>
-                    <td>10</td>
-                    <td>6</td>
-                    <td>10</td>
-                    <td>9</td>
-                    <td>7</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Apple</td>
-                    <td>60</td>
-                    <td>2.99$</td>
-                    <td>Fruits & Vegetables</td>
-                    <td>6</td>
-                    <td>Do you want to become the next Isaac Newton? If so, buy our apples! One apple falling on your head will give you the same intelligence as Newton. And as the doctors say, "An apple a day keeps the doctor away".</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>10</td>
-                    <td>1</td>
-                    <td>100</td>
-                    <td>10</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Banana</td>
-                    <td>60</td>
-                    <td>1.29$</td>
-                    <td>Fruits & Vegetables</td>
-                    <td>6</td>
-                    <td>Our fresh bananas are directly from the mightly lands of Costa Rica and Guatemala. Each bite will make you regret not buying more!</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>17</td>
-                    <td>1</td>
-                    <td>10</td>
-                    <td>25</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Orange</td>
-                    <td>60</td>
-                    <td>1.99$</td>
-                    <td>Fruits & Vegetables</td>
-                    <td>6</td>
-                    <td>Freshly cultivated in the fertile land of China, you can rest assured that only the best orange are chosen for export.</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>5</td>
-                    <td>15</td>
-                    <td>0</td>
-                    <td>15</td>
-                    <td>100</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Lettuce</td>
-                    <td>60</td>
-                    <td>1.29$</td>
-                    <td>Fruits & Vegetables</td>
-                    <td>6</td>
-                    <td>You don't have to worry about E.coli when buying our lettuce. Our lettuce batches are thoroughly inspected by our in-house team of scientists to make sure they are healthy and disease-free.</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Butter</td>
-                    <td>60</td>
-                    <td>2.99$</td>
-                    <td>Dairy & Eggs</td>
-                    <td>6</td>
-                    <td>Our butter is made by our in-house team of experts directly from Italy. They are masters in their trade and have been doing that for over 30 years!</td>
-                    <td>18</td>
-                    <td>23</td>
-                    <td>21</td>
-                    <td>8</td>
-                    <td>8</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Cheese</td>
-                    <td>60</td>
-                    <td>3.99$</td>
-                    <td>Dairy & Eggs</td>
-                    <td>6</td>
-                    <td>Our cheese is made in-house with our expert team that comes directly from Italy. It is fermented with the same milk sold in our store, that's how you know we only offer the best for our customers.</td>
-                    <td>10</td>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>8</td>
-                    <td>14</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Eggs</td>
-                    <td>60</td>
-                    <td>6.99$</td>
-                    <td>Dairy & Eggs</td>
-                    <td>6</td>
-                    <td>Our eggs are hatched from free roam chicken. This means, all natural. No growth hormones or chemicals!</td>
-                    <td>6</td>
-                    <td>5</td>
-                    <td>7</td>
-                    <td>7</td>
-                    <td>5</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Milk</td>
-                    <td>60</td>
-                    <td>3.99$</td>
-                    <td>Dairy & Eggs</td>
-                    <td>6</td>
-                    <td>Do you rather have your milk in carton box or plastic bag? No need to fight, we offer both and with different % of fat too!</td>
-                    <td>10</td>
-                    <td>3</td>
-                    <td>1</td>
-                    <td>5</td>
-                    <td>10</td>
-                    <td>4</td>
-                    <td>6</td>
-                    <td><a class="backendbtn" href="BackstoreEditProduct.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
+                        xmlhttp.open("GET", "ProductsListData.xml", true);
+                        xmlhttp.send();
+                    }
 
-            </table>
+                    function myFunction(xml) {
+                        var i;
+                        var xmlDoc = xml.responseXML;
+                        var table="<tr><th>Product</th><th>Quantity</th><th>Price</th><th>Aisle</th><th>Limited Quantity</th><th>Description</th><th>Fat</th><th>Cholesterol</th><th>Sodium</th><th>Carbohydrates</th><th>Protein</th><th>Vitamin A</th><th>Vitamin C</th><th colspan=\"2\" style=\"text-align: center;\">Options</th></tr>";
+                        var x = xmlDoc.getElementsByTagName("record");
+                        for (i = 0; i <x.length; i++) { 
+                            table += "<tr><td>" +
+                            x[i].getElementsByTagName("Product")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("Quantity")[0].childNodes[0].nodeValue +
+                            "</td></tr>" +
+                            x[i].getElementsByTagName("Price")[0].childNodes[0].nodeValue +
+                            "</td></tr>" +
+                            x[i].getElementsByTagName("Aisle")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("LimitedQuantity")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("Description")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("Fat")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("Cholesterol")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("Sodium")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("Carbohydrates")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("Protein")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("VitaminA")[0].childNodes[0].nodeValue +
+                            "</td><td>" +
+                            x[i].getElementsByTagName("VitaminB")[0].childNodes[0].nodeValue +
+                            "</td></tr><td><a class=\"backendbtn\" href=\"BackstoreEditProduct.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td>";
+                        }
+                        document.getElementById("productsTable").innerHTML = table;
+                        }
+                </script>
+            <table class="backendtable" align="center" id="productsTable" onload="loadXMLDoc()"></table>
             </div>
         </p>
 

@@ -32,52 +32,41 @@
 
         <p>
             <div class="backstore-menu" style="overflow-x:auto;">
-            <table class="backendtable" align="center">
-                <tr>
-                    <th>User First Name</th>
-                    <th>User Last Name</th>
-                    <th>User Email Address</th>
-                    <th>User Postal Code</th>
-                    <th>User Password</th>
-                    <th colspan="2">Options</th>
-                </tr>
-                <tr>
-                    <td>Kevin</td>
-                    <td>Estrada</td>
-                    <td>kevinestrada@gmail.com</td>
-                    <td>A1B 2C3</td>
-                    <td>123456</td>
-                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Tamzid</td>
-                    <td>Hossain</td>
-                    <td>tamzidhossain@gmail.com</td>
-                    <td>A1B 2C3</td>
-                    <td>123456</td>
-                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Cerine</td>
-                    <td>Madi</td>
-                    <td>cerinemadi@gmail.com</td>
-                    <td>A1B 2C3</td>
-                    <td>123456</td>
-                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-                <tr>
-                    <td>Bruce</td>
-                    <td>Say</td>
-                    <td>brucesay@gmail.com</td>
-                    <td>A1B 2C3</td>
-                    <td>123456</td>
-                    <td><a class="backendbtn" href="BackstoreEditUser.html">Edit</a></td>
-                    <td></button> <button class="backendbtn">Delete</button></td>
-                </tr>
-            </table>
+              <script>
+                function loadXMLDoc() {
+                    var xmlhttp = new XMLHttpRequest();
+                    xmlhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        myFunction(this);
+                        }
+                    };
+
+                    xmlhttp.open("GET", "ProductsListData.xml", true);
+                    xmlhttp.send();
+                }
+
+                function myFunction(xml) {
+                    var i;
+                    var xmlDoc = xml.responseXML;
+                    var table="<tr><th>User First Name</th><th>User Last Name</th><th>User Email Address</th><th>User Postal Code</th><th>User Password</th><th colspan=\"2\" style=\"text-align: center;\">Options</th></tr>";
+                    var x = xmlDoc.getElementsByTagName("record");
+                    for (i = 0; i <x.length; i++) { 
+                        table += "<tr><td>" +
+                        x[i].getElementsByTagName("FirstName")[0].childNodes[0].nodeValue +
+                        "</td><td>" +
+                        x[i].getElementsByTagName("LastName")[0].childNodes[0].nodeValue +
+                        "</td></tr>" +
+                        x[i].getElementsByTagName("Email")[0].childNodes[0].nodeValue +
+                        "</td></tr>" +
+                        x[i].getElementsByTagName("PostalCode")[0].childNodes[0].nodeValue +
+                        "</td></tr>" +
+                        x[i].getElementsByTagName("Password")[0].childNodes[0].nodeValue +
+                        "</td></tr><td><a class=\"backendbtn\" href=\"BackstoreEditUser.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td>";
+                    }
+                    document.getElementById("usersTable").innerHTML = table;
+                    }
+            </script>
+        <table class="backendtable" align="center" id="usersTable" onload="loadXMLDoc()"></table>
             </div>
         </p>
 
