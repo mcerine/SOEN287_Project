@@ -30,7 +30,9 @@
             <a class="backendbtn" href="BackstoreEditOrder.html" style="position: absolute; right: 7%;">Add Order</a>
         <p>
             <div class="backstore-menu" style="overflow-x:auto;">
-                <script>
+                
+            <table class="backendtable" align="center" id="orderTable" onload="loadXMLDoc()"></table>
+            <script>
                     function loadXMLDoc() {
                         var xmlhttp = new XMLHttpRequest();
                         xmlhttp.onreadystatechange = function() {
@@ -62,7 +64,6 @@
                         document.getElementById("orderTable").innerHTML = table;
                         }
                 </script>
-            <table class="backendtable" align="center" id="orderTable" onload="loadXMLDoc()"></table>
             </div>
         </p>
   </div>

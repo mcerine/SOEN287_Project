@@ -32,7 +32,9 @@
 
         <p>
             <div class="backstore-menu" style="overflow-x:auto;">
-              <script>
+              
+        <table class="backendtable" align="center" id="usersTable" onload="loadXMLDoc()"></table>
+            <script>
                 function loadXMLDoc() {
                     var xmlhttp = new XMLHttpRequest();
                     xmlhttp.onreadystatechange = function() {
@@ -41,7 +43,7 @@
                         }
                     };
 
-                    xmlhttp.open("GET", "ProductsListData.xml", true);
+                    xmlhttp.open("GET", "UsersListData.xml", true);
                     xmlhttp.send();
                 }
 
@@ -66,8 +68,7 @@
                     document.getElementById("usersTable").innerHTML = table;
                     }
             </script>
-        <table class="backendtable" align="center" id="usersTable" onload="loadXMLDoc()"></table>
-            </div>
+          </div>
         </p>
 
 
