@@ -77,7 +77,7 @@
                             x[i].getElementsByTagName("VitaminA")[0].childNodes[0].nodeValue +
                             "</td><td>" +
                             x[i].getElementsByTagName("VitaminB")[0].childNodes[0].nodeValue +
-                            "</td><td><a class=\"backendbtn\" href=\"BackstoreEditProduct.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td></tr>";
+                            "</td><td><a class=\"backendbtn\" href=\"BackstoreEditProduct.html\">Edit</a></td><td><form method=\"post\" action=\"deleteProduct.php\"><button type=\"submit\" class=\"backendbtn\" id=\"dltProduct\" name=\"dltProduct\" value=\"x[i].getElementsByTagName(\"Product\")[0].childNodes[0].nodeValue\"/>Delete</button></form></td></tr>";
                         }
                         document.getElementById("productsTable").innerHTML = table;
                         }

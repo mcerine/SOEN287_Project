@@ -64,7 +64,7 @@
                         x[i].getElementsByTagName("PostalCode")[0].childNodes[0].nodeValue +
                         "</td><td>" +
                         x[i].getElementsByTagName("Password")[0].childNodes[0].nodeValue +
-                        "</td><td><a class=\"backendbtn\" href=\"BackstoreEditUser.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td></tr>";
+                        "</td><td><a class=\"backendbtn\" href=\"BackstoreEditUser.html\">Edit</a></td><td><form method=\"post\" action=\"deleteUser.php\"><button type=\"submit\" class=\"backendbtn\" id=\"dltUser\" name=\"dltUser\" value=\"x[i].getElementsByTagName(\"Email\")[0].childNodes[0].nodeValue\"/>Delete</button></form></td></tr>";
                     }
                     document.getElementById("usersTable").innerHTML = table;
                     }

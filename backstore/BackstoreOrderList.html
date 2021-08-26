@@ -30,6 +30,8 @@
             <a class="backendbtn" href="BackstoreEditOrder.html" style="position: absolute; right: 7%;">Add Order</a>
         <p>
             <div class="backstore-menu" style="overflow-x:auto;">
+
+
                 
             <table class="backendtable" align="center" id="orderTable"></table>
             <script>
@@ -59,10 +61,11 @@
                             x[i].getElementsByTagName("User")[0].childNodes[0].nodeValue +
                             "</td><td>" +
                             x[i].getElementsByTagName("Products")[0].childNodes[0].nodeValue +
-                            "</td><td><a class=\"backendbtn\" href=\"BackstoreEditOrder.html\">Edit</a></td><td><button class=\"backendbtn\">Delete</button></td></tr>";
+                            "</td><td><a class=\"backendbtn\" href=\"BackstoreEditOrder.html\">Edit</a></td><td><form method=\"post\" action=\"deleteOrder.php\"><button type=\"submit\" class=\"backendbtn\" id=\"dltOrder\" name=\"dlt\" value=\"x[i].getElementsByTagName(\"Number\")[0].childNodes[0].nodeValue\"/>Delete</button></form></td></tr>";
+                                // <button class=\"backendbtn\">Delete</button></td></tr>";
                         }
                         document.getElementById("orderTable").innerHTML = table;
-                        }
+                    }
                 </script>
             </div>
         </p>

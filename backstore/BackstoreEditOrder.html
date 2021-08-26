@@ -36,18 +36,18 @@
 
 
         <p>
-            <form class="backendform" style="height: 320px;">
-                <label for="UFname">Order Number:</label>
-                <input type="text" id="UFname" name="UFname"><br>
+            <form class="backendform" style="height: 320px;" action="addOrder.php" method="POST">
+                <label for="orderNb">Order Number:</label>
+                <input type="text" id="orderNb" name="orderNb"><br>
                 <br/>
-                <label for="ULname">Order Cost:</label>
-                <input type="text" id="ULname" name="ULname"><br>
+                <label for="orderCost">Order Cost:</label>
+                <input type="text" id="orderCost" name="orderCost"><br>
+                <br/> 
+                <label for="orderUser">Order User:</label>
+                <input type="text" id="orderUser" name="orderUser"><br>
                 <br/>
-                <label for="Uemail">Order User:</label>
-                <input type="text" id="Uemail" name="Uemail"><br>
-                <br/>
-                <label for="Upostcod">Order Products:</label>
-                <input type="text" id="Upostcod" name="Upostcod"><br>
+                <label for="orderProducts">Order Products:</label>
+                <input type="text" id="orderProducts" name="orderProducts"><br>
                 <br/>
                 <br/>
                 <input type="submit" formaction="BackstoreOrderList.html" value="Save" style="background-color: #D8E3E7; border-radius: 10px;">
