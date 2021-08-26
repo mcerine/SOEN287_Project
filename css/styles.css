@@ -227,45 +227,6 @@ div.nutrition {
   padding: 5%;
 }
 
-/********************* ID Selector ********************/
-
-
-/********************* Size Conditions ********************/
-@media (max-width: 934px) {
-    ul {
-      line-height: 1.5;
-    }
-
-    hr {
-      width: 60%;
-    }
-
-    .navigation {
-    margin: 5% 5% auto 5%;
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-    width: 90%;
-    height: 400px;
-  }
-
-
-  .home {
-    right: 40%;
-  }
-
-  .login {
-    right: 28%;
-  }
-
-  .cart {
-    right: 16%;
-  }
-
-  .checkout {
-    right: 4%;
-  }
-}
-
 /********************* Login ********************/
 
 .loginbox, .signupbox{
@@ -414,3 +375,47 @@ th:last-child{
   border: none;
   margin-top: 20px;
 }
+
+/********************* ID Selector ********************/
+
+
+/********************* Size Conditions ********************/
+@media (max-width: 934px) {
+    ul {
+      line-height: 1.5;
+    }
+
+    hr {
+      width: 60%;
+    }
+
+    .navigation {
+    margin: 5% 5% auto 5%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    width: 90%;
+    height: 400px;
+  }
+
+
+  .home {
+    right: 40%;
+  }
+
+  .login {
+    right: 28%;
+  }
+
+  .cart {
+    right: 16%;
+  }
+
+  .checkout {
+    right: 4%;
+  }
+
+  .subtotal table{
+    max-width:100%;
+  }
+}
+
